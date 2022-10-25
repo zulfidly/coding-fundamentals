@@ -1,0 +1,35 @@
+.avatar {
+    display: inline-block;
+    position: relative;
+    background-color: beige;
+}
+
+.avatar > img {    /*search for an img inside the avatar */
+    /*height :4rem;  /*1rem = 16px, its relative to browser*/
+    /* width: 4rem; */
+    border-radius: 50%;
+    width: 25%;
+}
+
+.status {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 55px;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 9999px;
+    background-color: red;
+}
+.online {
+    background-color: lightgreen;
+    border: 2px solid white;
+}
+.offline {
+    background-color: lightgrey;
+    border: 2px solid white;
+}
+.busy {
+    background-color: lightcoral;
+    border: 2px solid white;
+}
