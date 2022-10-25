@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        body {
+            background-color: #053a3d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: lightgrey;
+            width: 40%;
+            border: 1.5px solid #54e6e7;
+            box-shadow: 0px 0px 15px #aac6c6;
+
+        }
+        .progressBar {
+            height:25px;
+            padding-top: 4px;
+            background-color: #1a2929;
+            width: 50%;
+            animation: animatedBar 3s infinite alternate;
+            text-align: right;
+            font-weight: bold;
+            color: lightsteelblue; 
+            text-indent:  50px;
+        }
+        @keyframes animatedBar {
+            0% { width: 0%; }
+            100% {width: 100%; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="progressBar">>>>>>Loading>>>>>></div>
+    </div>
+</body>
+</html>
