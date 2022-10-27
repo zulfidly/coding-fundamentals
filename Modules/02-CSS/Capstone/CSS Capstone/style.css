@@ -1,0 +1,93 @@
+
+/* set default background color */
+@media (min-width: 200px) {
+    body {
+        background-color: lightgrey;
+    }
+    .default {
+        display:block;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }   
+}
+
+
+@media (min-width: 320px) {
+    /* 
+    - show mobile div (red)
+    - hide tablet and desktop divs
+    */
+    body {
+        background-color: lightpink;
+    }
+    .default {
+        display:none;
+    }
+    .mobile{
+        display: block;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+}
+
+
+@media (min-width: 640px) {
+    /*
+        - show tablet div (green)
+        - hide mobile and desktop divs
+        - change background color
+    */
+    body {
+        background-color: lightgreen;
+    }
+    .default {
+        display:none;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*
+        - show desktop div
+        - hide mobile and tablet divs
+        - change background color (blue)
+    */
+    body {
+        background-color: lightsteelblue;
+    }
+    .default {
+        display:none;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+}
+
+.emoji {
+    
+}
