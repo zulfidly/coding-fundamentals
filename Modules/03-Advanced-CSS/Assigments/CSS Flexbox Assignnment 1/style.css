@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px dotted red; */
+    background-color: black;
+
+}
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px dotted red; */
+    margin: 35px;
+}
+/* Top Section */
+.topSectMenuCtnr {
+    position: relative;
+    height: 200px;
+    width: 97.5%;
+    background-color: black;
+    border: 8px solid beige;
+    border-radius: 25px;
+}
+.topSectCtnr {
+    position: absolute;
+    /* border: 1px dotted green; */
+    right: 8px;
+    top: 8px;
+}
+.topSectTitle {
+    position: absolute;
+    left: 30px;
+    bottom:-10px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 600%;
+    color: beige;
+    /* border: 1px dotted green; */
+}
+.topSect {
+    position: relative;
+    left: 0;
+    /* border: 1px dotted green; */
+}
+.Dest, .Accom, .Tour {
+    display:inline-block;
+    position: relative;
+    /* border: 1px dotted green; */
+    height: 45px; 
+}
+.Dest:hover .DestDrpDnCtn, .Accom:hover .AccomDrpDnCtn, .Tour:hover .TourDrpDnCtn {
+    display: block;
+}
+.DestDrpDnCtn, .AccomDrpDnCtn, .TourDrpDnCtn {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.DestDrpDnCtn a, .AccomDrpDnCtn a, .TourDrpDnCtn a {
+    color: black;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    background-color: beige;
+    margin-top: 2px;
+    margin-left: 5px;
+    text-decoration: none;
+    display: flex;     
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    height: 40px;
+    min-width: 200px;
+    /* border: 1px dotted green; */
+}
+.DestDrpDnCtn a:hover, .AccomDrpDnCtn a:hover, .TourDrpDnCtn a:hover {
+    border: 2px solid beige;
+    box-shadow: inset 0px 0px 0px 2px black;
+    box-sizing: border-box;
+
+}
+.DestDrpDn, .AccomDrpDn, .TourDrpDn { /*Menu*/
+    display: flex;
+    color: black;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 1.1px;
+    font-size: 120%;
+    /* border: 1px solid green; */
+    background-color: beige;
+    border-radius: 10px;
+    min-width: 200px;
+    height: 45px;
+    cursor:pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+.DestDrpDn:hover, .AccomDrpDn:hover, .TourDrpDn:hover {
+    border: 2px solid beige;
+    box-shadow: inset 0px 0px 0px 2px black;
+    box-sizing: border-box;
+}
+/* mid section */
+.midSectR1, .midSectR2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    /* border: 1px dotted purple; */
+}
+.r1c1, .r1c2, .r1c3, .r2c1, .r2c2, .r2c3, .r3c1, .r3c2, .r3c3 {
+    display: flex;
+    flex: 1;
+    border: 8px solid black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#midSectImgCtnr {
+    position: relative;
+    text-align: center;
+    color: black;
+    /* border: 1px dotted green; */
+    width: 375px;
+}
+.midSectImg {
+    width: 375px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 40% 70%;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+    border-radius: 15px;
+    opacity: 75%;    
+    border: 3px solid beige;
+
+}
+#midSectAuthor, .author, .dateBlog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    flex: 1;
+    width: 375px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 85%;
+    letter-spacing: 1.2px;
+    margin-top: 3px;
+    /* border: 1px dotted yellow; */
+}
+/* #midSectAuthor {
+    border: 1px solid beige;
+} */
+
+.midSectTxt {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+
+    /* transform: translate(-50%, -50%); */
+    text-decoration: none;
+    color: beige;
+    font-size: 200%;
+    font-family: 'Signika', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; */
+}
+.midSectTagCtnr {
+    position:absolute;
+    color: black;
+    top: 8px;
+    right: 3px;
+    display: inline-flex;
+    flex-direction: row;
+    /* border: 1px dotted yellow; */
+    opacity: 85%;
+}
+.midSectTag {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: beige;
+    border-radius: 10px;
+    width: auto;
+    padding: 0 8px 0 8px;
+    height: 30px;
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;
+    font-size: 90%;
+    letter-spacing: 1.1px;
+    margin: 3px;
+}
+.authorImg {
+    border-radius: 50%;
+    width: 30%;
+}
+.calImg {
+    /* border-radius: 50%; */
+    width: 13%;
+}
+
+#midSectImgCtnr:hover .midSectImg {
+    opacity: 100%;
+}
+@media (max-width: 900px) {
+    .topSectTitle {
+        font-size: 390%;
+        left: 10%;
+        bottom: 30%;
+    }
+    .DestDrpDn, .AccomDrpDn, .TourDrpDn {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .topSectTitle {
+        font-size: 200%;
+        left: 15%;
+        bottom: 40%;
+    }
+}
