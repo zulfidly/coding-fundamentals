@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid white;
+    height: 98vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+.content {
+    height: 500px;
+}
+footer {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footlinkCtnr {
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px dotted green; */
+}
+.footlinkCtnr a {
+    color: white;
+    text-decoration: none;
+    /* border: 1px dotted green; */
+    flex: 1;
+    text-align: center;
+    margin: 0 10px 5px 10px;
+
+}
+.socmedCtnr {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.socmedlogo {
+    width: 30px;
+    margin: 0px 20px 10px 20px;
+    /* border: 1px dotted green; */
+}
+.copyright {
+    margin-bottom: 10px;
+    text-align: center;
+}
