@@ -1,0 +1,226 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px dotted red; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.A-navBar {
+    width: 99%;
+    /* border: 1px dotted red; */
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.A1-logo {
+    width: 80px;
+    margin: 6px 10px 6px 10px;
+    filter: invert(1);
+    /* border: 1px dotted yellow; */
+}
+.A1-navBarMenuCtnr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    /* border: 1px dotted green; */
+}
+.A1-navBarMenuCtnr a {
+    margin: 0 5px 0 10px;
+    /* border: 1px dotted green; */
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.2px;
+}
+.A1-login {
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.2px;
+    background-color: none;
+    width: 70px;
+    height: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.B-headSect {
+    width: 97%;
+    /* border: 1px dotted green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+.B-headSect h2 {
+    margin: 25px 5px 5px 5px;
+    /* text-align: center; */
+}
+.B-headSect h4 {
+margin-bottom: 30px;
+}
+
+.C-ctCard {
+    width: 99%;
+    /* border: 1px solid green;  */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.C1-ctcInfoCtnr {
+    width: 375px;
+    /* border: 1px dotted blue; */
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+.C1-ctcInfo {
+    display: flex;
+    flex-direction: column;
+}
+.indent  {
+    margin-left: 20px;
+}
+.C1-phoneCtnr, .C1-emailCtnr {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px dotted blue; */
+    height: 50px;
+}
+.C1-phoneCtnr p, .C1-emailCtnr a {
+    margin-left: 10px;
+}
+.C1-emailCtnr a {
+    text-decoration: none;
+    color: white;
+}
+.C1-socMed {
+    /* border: 1px dotted blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.divider {
+    text-align: center;
+}
+.iconAll {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    /* margin: 0px 10px 0px 20px; */
+    /* border: 1px dotted blue; */
+}
+.C2-form {
+    /* width: 100%; */
+    display: flex;
+    flex: 0.95;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: white;
+    /* border: 1px dotted blue; */
+}
+.C2-formCtnr {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 99%;
+    height: 100%;
+    /* border: 1px dotted green; */
+}
+.colCtnr {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px dotted green; */
+}
+.FnameLname, .rowEmailPhone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* border: 1px dotted green; */
+}
+.subject, .msg {
+    margin-bottom: 10px;
+}
+.Fname, .Lname, .email, .phone {
+    /* border: 1px dotted red; */
+    width: 370px;
+    margin-bottom: 10px;
+
+}
+
+.FnameSpc, .LnameSpc, .emailSpc, .phoneSpc, .subjectSpc {
+    width: 100%;
+    height: 25px;
+    padding: 2px 0 2px 0;
+    border: 1px solid black;
+    /* border: 1px dotted green; */
+}
+textarea {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 0px;
+    background-color: white;
+    /* font-size: 16px; */
+    resize: none;
+}
+.submitButtonCtnr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+.submitButton {
+    border: 2px solid black;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 415px) {
+    .A1-navBarMenuCtnr {
+        width: 200px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .A1-login {
+        width: 60px;
+        height: 60px;
+    }
+    .A-navBar {
+        position: fixed;
+    }
+    .B-headSect {
+        margin-top: 80px;
+    }
+}
