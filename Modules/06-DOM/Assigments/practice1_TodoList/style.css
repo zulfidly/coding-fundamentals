@@ -1,0 +1,50 @@
+body {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ctnr {
+    border: 1px solid black;
+    padding: 15px;
+    width: 60%;
+    background-color: lightgoldenrodyellow;
+}
+#formTodo {
+        /* border: 1px dotted red; */
+        margin-bottom: 20px;
+        /* height: 90px; */
+}
+#newTodoForm  {
+    height:auto;
+    width: 300px;
+    height: 20px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    /* border: 1px dotted green; */
+}
+li{ 
+    /* border: 1px dotted blue; */
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.toDoListBox {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+/* #toDoListUL {
+    border: 1px dotted red;
+} */
+/* Completed Todo */
+
+
+/* Deleted Todo */

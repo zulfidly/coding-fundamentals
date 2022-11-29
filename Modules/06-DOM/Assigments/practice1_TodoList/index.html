@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://media1-production-mightynetworks.imgix.net/asset/36659798/Sigma_School_Logo__2_.png?ixlib=rails-4.2.0&amp">
+    <link rel="stylesheet" href="style.css">
+    <title>DOMpractice1</title>
+</head>
+<body>
+    <div class="ctnr">
+        <h1>Todo App</h1>
+            
+        <!-- Todo Form -->
+        <form id="formTodo">
+            <label for="addTodo">Update Todo list :</label>
+            <input id="newTodoForm" type="text" size="30" maxlength="50" name="addTodo" autocomplete="off" autofocus/>
+            <input id="addTodoBtn" type="submit" value="Update"/>
+        </form>
+
+        <!-- Todo List -->
+        <button id="checkAllBtn" value="checkAll" >Check All</button>
+        <button id="unCheckAllBtn" value="unCheckAll" >Un-Check All</button>
+        <button id="delBtn" value="Delete" >Delete Checked</button>
+
+        <ul id="toDoListUL">
+            <li class="toDoListLI"><input class="toDoListBox" type="checkbox" ></input>Introduction</li>
+            <li class="toDoListLI"><input class="toDoListBox" type="checkbox" ></input>Accessing the DOM</li>
+            <li class="toDoListLI"><input class="toDoListBox" type="checkbox" ></input>Traverse the DOM</li>
+            <li class="toDoListLI"><input class="toDoListBox" type="checkbox" ></input>Manipulating the DOM</li>
+            <li class="toDoListLI"><input class="toDoListBox" type="checkbox" ></input>DOM Nodes</li>
+        </ul>
+    </div>
+    <!-- Link JavaScript file -->    
+    <script src="app.js"></script>
+</body>
+</html>

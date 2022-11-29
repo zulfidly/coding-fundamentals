@@ -1,0 +1,191 @@
+* {    
+    margin: 0;    
+    padding: 0;    
+    box-sizing: border-box;
+}
+.mainCtnr {
+    width: 70%;
+    /* border: 1px dotted red; */
+}
+body {    
+    font-family: system-ui;    
+    min-height: 100vh;    
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    background-color: beige;
+}
+.dateTimeCtnr {  /* insidee mainCtnr*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+    /* border: 1px dotted red; */
+}
+#submitBtn {
+    color: #fff;
+    width: 100%;    
+    height: 5rem; 
+    font-family: system-ui;    
+    font-size: 2rem;
+    border: none;
+    background: hsl(209, 61%, 16%);    
+    cursor: pointer;
+    /* border: 1px dotted red; */
+
+}
+#submitBtn, #dateOnly, #timeOnly, .deadline-format {
+    border-radius: 6px;
+    margin: 2.5px 0;
+}
+
+.deadline {    
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    /* border: 1px dotted red; */
+}
+
+.deadline-format {    
+    background: hsl(209, 61%, 16%);    
+    color: #fff;    
+    /* margin-right: 1rem;     */
+    width: 15rem;    
+    height: 15rem;    
+    /* display: grid;    
+    place-items: center;     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-basis: 1; */
+    text-align: center;
+
+}
+
+.deadline-format span {    
+    display: block;    
+    text-transform: uppercase;    
+    letter-spacing: 2px;    
+    font-size: 1rem;
+}
+
+.deadline h4 {    
+    font-size: 2rem;    
+    /* margin-bottom: 0.25rem; */
+}
+
+#dateOnly {
+    width: 100%;
+    height: 5rem;
+    font-family: system-ui;    
+    font-size: 2rem;
+    color: white;
+    border: none;
+    background-color: hsl(209, 61%, 16%);
+    /* margin-bottom: 10px; */
+  }
+  #dateOnly::-webkit-calendar-picker-indicator {
+    filter: invert(0.9);
+    width: 20%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    /* border: 1px dotted red; */
+  }
+  #dateOnly::-webkit-datetime-edit {
+    /* border: 1px dotted red; */
+    font-family: system-ui;   
+    text-align: center; 
+  }
+  
+  #dateOnly::-webkit-datetime-edit-fields-wrapper {
+    /* border: 1px dotted beige; */
+    font-family: system-ui;    
+  }
+  #dateOnly::-webkit-datetime-edit-day-field {
+    /* border: 1px dotted yellow; */
+    font-family: system-ui;    
+  }
+  #dateOnly::-webkit-datetime-edit-text {/*(contains /)*/
+    /* border: 1px dotted green; */
+    margin: 0 10px 0 10px;
+  }
+  #dateOnly::-webkit-datetime-edit-month-field {
+    /* border: 1px dotted red; */
+    font-family: system-ui;    
+  }
+  #dateOnly::-webkit-datetime-edit-year-field {
+    font-family: system-ui;    
+  }
+  
+  #timeOnly {
+    width: 100%;
+    height: 5rem;
+    font-family: system-ui;    
+    font-size: 2rem;
+    color: white;
+    border: none;
+    background-color: hsl(209, 61%, 16%);
+  }
+  #timeOnly::-webkit-datetime-edit {
+    /* border: 1px dotted red; */
+    font-family: system-ui;   
+    text-align: center; 
+  }
+  #timeOnly::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    width: 20%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    /* border: 1px dotted red; */
+  }
+  #timeOnly::-webkit-datetime-edit-text {/*(contains /)*/
+    /* border: 1px dotted green; */
+    margin: 0 10px 0 10px;
+  
+  }
+  
+  #timeOnly::-webkit-datetime-edit-hour-field {
+    /* border: 1px dotted red; */
+    font-family: system-ui;    
+  }
+  #timeOnly::-webkit-datetime-edit-minute-field {
+    /* border: 1px dotted red; */
+    font-family: system-ui;    
+  }
+  #timeOnly::-webkit-datetime-edit-ampm-field {
+    /* border: 1px dotted red; */
+    font-family: system-ui;    
+  }
+  
+  
+
+@media (min-width:460px) {
+    .dateTimeCtnr {  /* insidee mainCtnr*/
+        flex-direction: row;
+        gap: 5px;
+    }
+    .deadline h4 {    
+        font-size: 6rem;    
+    }
+    .deadline-format span {    
+        font-size: 1.5rem;
+    }
+    #dateOnly::-webkit-calendar-picker-indicator {
+        width: 20%;
+        height: 50%;
+      }
+      #dateOnly {
+        font-size: 1.7rem;
+      }
+      #timeOnly {
+        font-size: 1.7rem;
+      }
+    
+}
