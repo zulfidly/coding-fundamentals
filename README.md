@@ -1,6 +1,7 @@
 # Coding Fundamentals
 Use this repository to submit your assignments in Coding Fundamentals course.
-
+(-test push commits to a remote)
+#test
 ## Student Guide
 1. Go to https://github.com and register a new account. (Go to Step 3 if you have done this already)
 2. Confirm your registration through your email.
