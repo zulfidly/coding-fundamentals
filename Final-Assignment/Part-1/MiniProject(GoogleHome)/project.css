@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: auto;
+    padding: 6px;
+    padding-right: 20px;
+}
+.navBar {
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+}
+.gmailImages{
+    color: rgba(0,0,0,0.87);
+    user-select: none;
+    letter-spacing: 0.7px;
+}
+/* :not(svg) {
+    transform-origin: 0px 0px;
+} */
+.signInBtn {
+    width: 96px;
+    height: 36px;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1.0px;
+    
+}
+.signInBtn:hover{
+    background: #1b66c9;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+.rubikCtnr {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    align-items: center;
+    border-radius: 50%;
+}.rubikCtnr:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.rubikCtnr > svg {
+    color: #5f6368;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+
+}
+.gLogoCtnr {
+    width: 100%;
+    height: 92px;
+}
+.gLogoCtnr > img{
+    width: 272px;
+    height: 100%;
+}
+.s2, .languageOpt, .searchLucky{
+    margin-top: 20px;
+}
+.searchLucky{
+    width: 143px;
+    height: 36px;
+    background-color: #f8f9fa;
+    user-select: none;
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    cursor: pointer;
+}
+.searchLucky:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.searchBarCtnr{
+    width: 584px;
+    height: 46px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    padding: 0px 23px 0px 15px;
+}
+.searchBarCtnr:hover{
+    background-color: #fff;
+    border-color: rgba(223, 225, 229, 0);
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+.searchBarIcons {
+    width: 25px;
+    height: 100%;
+    display: flex;
+}
+.searchBarIcons > svg{
+    color: #9aa0a6;
+    fill: currentColor;
+}
+.searchBarIcons:nth-child(3):hover, .searchBarIcons:nth-child(4):hover{
+    cursor:pointer;
+}
+.searchBarIcons > img{
+    width: 130%;
+    height: 100%;
+}
+.searchForm {
+    width: 100%;
+    height: auto;
+    cursor: text;
+    word-wrap: break-word; 
+}
+.searchFormInput {
+    width: 100%;
+    height: 34px;
+    border: none;
+    outline: none;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+.flexRowCenter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.languageOpt{
+    font-size: 13px;
+}
+.languageOpt > a{
+    text-decoration: none;
+    color: #1a0dab;
+}
+.languageOpt>a:hover{
+    text-decoration: underline;
+}
+.blank{
+    width: 100%;
+    height: 246px;
+}
+.region{
+    width: 100%;
+    height: 48px;
+    font-size: 15px;
+    color: #70757a;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #dadce0;
+}
+.footerLinksCtnr {
+    justify-content: space-between;
+    padding: 0px 25px 5px 25px;
+    width: 100%;
+    height: 48px;
+    font-size: 15px;
+    color: #70757a;
+    background-color: #f2f2f2;
+    gap: 200px;
+}
+.footerLinks{
+    gap: 30px;
+    font-size: 14px;
+    user-select: none;
+}
+.gmailImages>p:hover, .footerLinks>p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

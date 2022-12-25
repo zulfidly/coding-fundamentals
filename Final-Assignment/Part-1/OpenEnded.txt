@@ -1,0 +1,28 @@
+Submit the solutions to your Github. Marking will be done by Sigma School Admins & Mentors.
+1. MCQ - Do it in a txt file. Call it MCQ.txt
+2. Open Ended - Do it in a txt file. Call it OpenEnded.txt
+3. Algo - Do it in a js file. Call it algo.js
+4. Project - Do it in an html,css file. Call it project.html & project.css
+
+1. Why do we need a loop? How do you write a basic for loop?
+To traverse through all elements in an array/object
+Example(5yo): to give 3 sweets to each siblings, but by giving to each 1 sweet at a time.
+Loop example :
+for(i=0; i<4; i++) { console.log(i) }
+
+2. Difference between console.log() and return?
+console.log prints the output to the console.
+return is to return the output to the caller, or simply to exit/terminate the function whenever it is reached.
+
+3. What are truthy values? What are falsy values?
+Falsy values are: 0, false, NaN, null, undefined
+Truthy values are everything else other than falsy.
+
+4. How does the internet work?
+Computers connected through wire/wireless connections i.e: LAN, WAN, Fiber, WiFi using determined set of protocols.
+
+5. How does a website work? What files are involved?
+A website displays to the client upon request, the information which was uploaded to the server by the website's developer.
+Files involved are : HTML file, CSS file, and another file that is programmed in a widely accepted language i.e: JavaScript or Phython
+
+

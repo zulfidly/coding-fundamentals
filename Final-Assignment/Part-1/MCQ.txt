@@ -1,0 +1,16 @@
+Submit the solutions to your Github. Marking will be done by Sigma School Admins & Mentors.
+1. MCQ - Do it in a txt file. Call it MCQ.txt
+2. Open Ended - Do it in a txt file. Call it OpenEnded.txt
+3. Algo - Do it in a js file. Call it algo.js
+4. Project - Do it in an html,css file. Call it project.html & project.css
+
+1. A
+2. B
+3. B
+4. A,B,C
+5. C
+6. A,B,C,D
+7. B,D
+8. C,D
+9. C,D
+10.B
