@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 220, 243);
+}
+.flexRowCenter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+nav.flexRowCenter {
+    justify-content: space-between; 
+    background-color: rgb(247, 164, 242);
+    padding: 0px 20px 0px 20px;
+}
+.navBarMenu {
+    height: 40px;
+    width: auto;
+    list-style-type: none;
+    gap: 35px;
+}
+.widgetCtnr {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 189, 237);
+    padding: 10px;
+}
+.allTodoSect, .allDeletedSect {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 190px;
+    height: auto;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+
+}
+.myActiveTodo, .myDeletedTodo {
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: rgb(252, 238, 251);
+    border-radius: 4px;
+    padding: 2px 8px;
+    gap: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.scratchpadCtnr {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(250, 199, 252);
+}
+.scratchpadInputField{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 0.7px solid rgb(168, 162, 162);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+}
+.formInputField {
+    font-size: 17px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.formTitleInputField {
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+}
+.newTodoCtnr {
+    border: 1px solid grey;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 120px;
+    padding: 10px;
+    margin: 10px 10px;
+    position: relative;
+}
+.addLiBtn, .addTitleBtn {
+    display: none;
+}
+.newTodoTitleForm {
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.editQuote {
+    font-size: 12.5px;
+}
+.saveNCloseBtn, .restoreBtn {
+    width: 140px;
+    height: 25px;
+    cursor: pointer;
+    /* margin: 10px 0px 10px 10px; */
+    background-color: rgb(250, 202, 250);
+    border: 1px solid rgb(145, 137, 137);
+    border-radius: 8px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    letter-spacing: 1px;
+}
+.deleteCheckedboxBtn {
+    width: 140px;
+    height: 25px;
+    cursor: pointer;
+    /* margin: 10px 0px 10px 10px; */
+    background-color: rgb(250, 202, 250);
+    border: 1px solid rgb(145, 137, 137);
+    border-radius: 8px;
+    position: absolute;
+    top: 36px;
+    right: 6px;
+    /* display: none; */
+    letter-spacing: 1px;
+}
+.deleteWholeTodo, .deletePermanentBtn {
+    width: 140px;
+    height: auto;
+    padding: 5px 0px;
+    cursor: pointer;
+    /* margin: 10px 0px 10px 10px; */
+    background-color: rgb(250, 202, 250);
+    border: 1px solid rgb(145, 137, 137);
+    border-radius: 8px;
+    position: absolute;
+    top: 66px;
+    right: 6px;
+    letter-spacing: 1px;
+}
+.createNewTodoBtn {
+    width: 140px;
+    height: 25px;
+    cursor: pointer;
+    /* margin: 10px 0px 10px 10px; */
+    background-color: rgb(250, 202, 250);
+    border: 1px solid rgb(145, 137, 137);
+    border-radius: 8px;
+    margin: 10px;
+    display: none;
+    letter-spacing: 1px;
+}
+.newTodoUL {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.newTodoUL > * {
+    margin-bottom: 8px;
+}
+.liTodo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

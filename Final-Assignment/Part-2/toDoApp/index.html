@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://media1-production-mightynetworks.imgix.net/asset/36659798/Sigma_School_Logo__2_.png?ixlib=rails-4.2.0&amp">
+    <link rel="stylesheet" href="style.css">
+    <script src="./declarations.js" defer></script>
+    <script src="./app.js" defer></script>
+    <script src="./deletedTodo.js" defer></script>
+
+    <title>ToDoApp</title>
+</head>
+<body>
+    <nav class="flexRowCenter">
+        <h1>Todo App</h1>
+        <ul class="navBarMenu flexRowCenter">
+            <!-- <li>Main List</li>
+            <li>Completed</li>
+            <li>Deleted</li> -->
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="flexRowCenter widgetCtnr">
+        <section class="flexRowCenter allTodoSect">
+            <h4>Current To-Do</h4>
+        </section>
+        <!-- <section class="flexRowCenter allCompletedSect">
+            <p>Completed To-Do</p>
+        </section> -->
+        <section class="flexRowCenter allDeletedSect">
+            <h4>Deleted To-Do</h4>
+        </section>
+    </div>
+    <div class="scratchpadCtnr">
+        <h3>Scratch Pad</h3>
+        <form class="scratchpadForm">
+            <label for="scratchpadLabel"></label>
+            <input class="scratchpadInputField" type="text" size="30" maxlength="" placeholder="" name="scratchpadLabel" autocomplete="off" />
+        </form>
+    </div>
+    <button class="createNewTodoBtn">Create new Todo</button>
+    <div class="newTodoMainCtnr">
+        <div class="newTodoCtnr">
+            <form class="newTodoTitleForm headerPerTodo flexRowCenter">
+                <input class="formTitleInputField" type="text" size="" maxlength="" placeholder="Title" autocomplete="off" />
+                <input class="addTitleBtn" type="submit" value="Add Title"/>
+            </form>
+            <form class="newTodoForm">
+                <input class="formInputField" type="text" size="30" maxlength="" placeholder="Start writing" autocomplete="off" />
+                <input class="addLiBtn" type="submit" value="Update"/>
+                <ul class="newTodoUL">
+                </ul>
+            </form>
+            <button class="saveNCloseBtn">Save</button>
+            <button class="deleteCheckedboxBtn">Delete checked</button>
+        </div>
+    </div>
+
+</body>
+</html>
