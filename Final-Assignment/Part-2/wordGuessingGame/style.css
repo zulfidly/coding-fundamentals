@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /*Hide scrollbar for Firefox */
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: beige;
+    height: 110%;
+}
+.mainDiv {
+    width: 100vw;
+    height: auto; /*100vh*/
+    padding-top: 15px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-flow: row wrap; /*column nowrap*/
+    justify-content: center; /*space-evenly*/
+    align-items: center;
+    /*position default*/
+    transform: translate(-50%, -50%);
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+}
+h3{
+    width: 420px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    color: rgb(75, 67, 67);
+    position: sticky;
+    top: 0px;
+    background-color:transparent;
+}
+.a-to-zCtnr {
+    gap: 5px;
+    width: 400px; /*800px */
+    height: auto;
+    margin: 0 0 20px 0;
+}
+.gap {
+    gap: 7px;
+}
+
+.a-to-z {
+    width: 33px; /*50px;*/
+    height: 45px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border: 1px solid rgb(196, 190, 190);
+    font-weight: 500;
+    color: rgb(75, 67, 67);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.a-to-z.highlightKeyBoard {
+    background-color: beige;
+    cursor: grab;
+}
+.letterBox {
+    width: 25px; /*40px*/
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 222, 222);
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid rgb(196, 190, 190);
+}
+.unGuessed {
+    opacity: 0;
+}
+.gameLetter {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    font-size: 18px;
+    color: rgb(75, 67, 67);
+}
+.vowel, .guessCorrectly {
+    transition: opacity 1s ease-out;
+    opacity: 1;
+}
+.spaceNotToGuess{
+    width: 25px;
+    height: 15px;
+    background-color: transparent;
+}
+.letterToGuessCtnr {
+    display: flex;
+    flex-flow: row wrap; /*row nowrap;*/
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.hint {
+    letter-spacing: 0.6px;
+}
+.gameSection {
+    width: 390px; /*min-width: 700px;*/
+    min-height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgray;
+    margin: 20px 0px 20px 0px; /*10px 0px;*/
+    border-radius: 10px;
+}
+.flagContainer {
+    width: 350px; 
+    min-height: 240px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.guessNumberWhat {
+    height: auto;
+    width: auto;
+    padding: 1px 10px;
+    background-color: white;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.overallScore {
+    height: auto;
+    width: auto;
+    padding: 1px 10px;
+    background-color: white;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.flexRowCenter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.answers{
+    width: 180px;
+    height: 30px;
+    text-decoration: none;
+    color: rgb(75, 67, 67);
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(191, 221, 191);
+    border-radius: 10px;
+    letter-spacing: 0.6px;
+}
+.lastChanceQuote {
+    display: none;
+    color: rgb(75, 67, 67);
+}
+.github {
+    align-items: center;
+    width: 37px;
+    height: auto;
+    border-radius: 8px;
+} .github > img { width: 100%; }
+
+.infoBoard{
+    display: flex;
+    flex-flow: row nowrap; /*column nowrap;*/
+    gap: 10px;
+}
+.tryAgainCtnr {
+    width: 98vw;
+    height: 98vh;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: rgb(75, 67, 67);
+    background-color: rgb(191, 221, 191);;
+    opacity: 0.97;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.resumePrevGameCtnr {
+    width: 98vw;
+    height: 98vh;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: rgb(75, 67, 67);
+    background-color: rgb(171, 219, 171);;
+    opacity: 0.99;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    gap: 20px;
+    display: none;
+}
+.tryAgainBtn, .resumeGameBtn, .startNewGameBtn {
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: rgb(75, 67, 67);
+    letter-spacing: 0.7px;
+    cursor: pointer;
+}
+.niceAttempt {
+    font-size: 50px;
+}
+.welcomeBack {
+    font-size: 35px;
+}
+.forThoseWhoTriedItAll {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 53%;
+    left: 50%;
+    z-index: 4;
+    color: rgb(54, 45, 45);
+    font-size: 200%;
+    font-weight: 600;
+    opacity: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+@keyframes bump {
+    0%      { transform: scale(1);  }
+    50%     { transform: scale(1.5); color: rgb(104, 90, 184);}
+    100%    { transform: scale(1);   }
+}
+.bumpLetter {
+    animation-duration: 0.35s;
+    animation-name: bump;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: 1 ;
+}
+
+@media screen and (min-width: 1000px) {
+    .a-to-zCtnr {
+        width: 800px; /*800px */
+    }
+    .flagContainer {
+        width: 400px; /*400px*/
+    }
+    .mainDiv {
+        height: 100vh; /*100vh*/
+        flex-flow: column nowrap; /*column nowrap*/
+        justify-content: space-evenly; /*space-evenly*/
+        padding-top: 20px;
+        /*position default*/
+        position: static; 
+        transform: translate(0%, 0%);
+        top: 0%;
+        left: 0%;
+    }
+    .gameSection {
+        width: auto; /*min-width: 700px;*/
+        margin: 10px 0px; /*10px 0px;*/
+        padding: 0px 20px 10px 20px;
+    }    
+    .infoBoard{
+        display: flex;
+        flex-flow: column nowrap; /*column nowrap;*/
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 2;
+    }
+    .letterToGuessCtnr {
+        flex-flow: row nowrap; /*row nowrap;*/
+    }
+    .letterBox {
+        width: 40px; /*40px*/
+        height: 40px;
+    }    
+    .a-to-z {
+        width: 50px; /*50px;*/
+        height: 50px;
+    }    
+    .a-to-z:hover {
+        background-color: rgb(190, 186, 186);
+    }    
+    h3 {     
+        font-size: 150%;
+        top: 0px;
+    }
+}
